@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>さわやか歯科クリニック</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
 </head>
 
 <body>
@@ -59,11 +60,9 @@
 
         </div>
     </header>
-    <!-- Slider main container -->
-    <div class="firstview swiper">
-        <!-- Additional required wrapper -->
+
+    <!-- <div class="firstview swiper">
         <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
                 <img src="images/fv/slide1.png" alt="さわやか歯科クリニックの外観">
                 <div class="firstview__content">
@@ -127,6 +126,54 @@
                 </tbody>
             </table>
         </div>
+    </div> -->
+
+    <!-- ヒーローイメージ用コード -->
+    <div class="firstview" id="hero-vegas">
+        <div class="firstview__content" id="hero-text">
+            <p>地下鉄南北線ひかりが丘駅から徒歩5分</p>
+            <p>外から雰囲気がわかる、通いやすい歯医者です</p>
+        </div>
+
+        <div class="calendar-container firstview__calendar">
+            <div class="calendar-title-flex">
+                <p class="calendar-container__title">受付時間</p>
+                <span class="calendar-container__note">日祝は休診です</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>月</th>
+                        <th>火</th>
+                        <th>水</th>
+                        <th>木</th>
+                        <th>金</th>
+                        <th>土</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>8:45〜13:15</th>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                    </tr>
+                    <tr>
+                        <th>14:15〜18:30</th>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>●</td>
+                        <td>×</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <section class="firstview-bottom">
@@ -135,7 +182,6 @@
             受付時間：平日 8:45〜13:15 / 14:15〜18:30 ・ 土曜 8:45〜13:15
         </p>
         <a href="#" class="button-reservation">今すぐ電話</a>
-        <!-- 683px以下でheader__ctaにあった予約ボタンをここに移動 -->
         <a href="#" class="button-reservation button-web-mobile">かんたんWEB予約</a>
     </section>
 
@@ -381,7 +427,8 @@
     </section>
 
     <section class="section news">
-        <div class="wrapper news-body">
+        <div class="wave-top"></div>
+        <div class="news-body bc-blue">
             <div class="section-header">
                 <h2 class="section-title">お知らせ</h2>
                 <p class="section-title-english">News</p>
@@ -413,6 +460,7 @@
                 </article>
             </div>
         </div>
+        <div class="wave-bottom"></div>
     </section>
 
     <section class="section access">
@@ -566,6 +614,10 @@
             <small>&copy;Copyright 2026 さわやか歯科クリニック All rights reserved.</small>
         </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 
