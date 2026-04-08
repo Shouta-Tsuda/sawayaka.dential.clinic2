@@ -63,7 +63,7 @@ body {
 .section-header {
   text-align: center;
   font-weight: var(--font-weight-bold);
-  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: var(--space-l);
   width: 100%;
 }
 
@@ -318,6 +318,7 @@ body {
     display: flex;
     position: fixed;
     z-index: 1001;
+    /* bottomの%を調整することにより、header__nav_listとの被りは無くなる */
     bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
