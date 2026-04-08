@@ -42,30 +42,73 @@
 //         });
 
 
+// ヒーローイメージ用コード
+jQuery(function ($) {
+  // スライドごとに表示させるテキストを配列で定義
+  var slideTexts = [
+    {
+      text1: '地下鉄南北線ひかりが丘駅から徒歩5分',
+      text2: '外から雰囲気がわかる、通いやすい歯医者です'
+    },
+    {
+      text1: '光が差し込む開放的な待合スペース',
+      text2: 'お子さま連れでも安心して通院できます'
+    },
+    {
+      text1: '必要以上の治療はしない',
+      text2: '今の状態と選択肢を丁寧にお伝えします'
+    }
+  ];
 
+  $('#hero-vegas').vegas({
+    slides: [
+      { src: 'images/fv/slide1.png' },
+      { src: 'images/fv/slide2.png' },
+      { src: 'images/fv/slide3.png' }
+    ],
+    transition: 'fade', // 切り替えエフェクト
+    transitionDuration: 2000, // 切り替えにかかる時間（ミリ秒）
+    delay: 6000, // 画像が表示されている時間（ミリ秒）
+    cover: true, // 画面いっぱいに画像を表示
+    animation: 'kenburns ease-out', // ゆっくりズームするアニメーション
+    animation: 'none', // アニメーションなし
+    animationDuration: 8000, // アニメーションにかかる時間（ミリ秒）
+    timer: false, // 下部のプログレスバーを非表示
 
+    // 【重要】スライドが切り替わる直前に実行される処理
+    walk: function (index, slideSettings) {
+      var textObj = slideTexts[index];
+      var $textContainer = $('#hero-text');
 
-
-const swiper = new Swiper('.firstview.swiper', {
-  // Optional parameters
-  loop: true,
-  autoplay: {
-    delay: 2500,
-
-  },
-  effect: 'fade', // フェード効果を追加
-  speed: 1500,
+      // 一旦テキストをフェードアウトさせてから中身を書き換え、再度フェードインさせる
+      $textContainer.fadeOut(500, function () {
+        $(this).html('<p>' + textObj.text1 + '</p><p>' + textObj.text2 + '</p>').fadeIn(500);
+      });
+    }
+  });
 });
 
-const swiper2 = new Swiper('.gallery-slider.swiper', {
-  loop: true,
-  autoplay: {
-    delay: 1000,
-  },
-  speed: 3000,
-  slidesPerView: 3,
-  spaceBetween: 30,
-});
+
+// Swiper用コード
+// const swiper = new Swiper('.firstview.swiper', {
+//   loop: true,
+//   autoplay: {
+//     delay: 2500,
+
+//   },
+//   effect: 'fade',
+//   speed: 1500,
+// });
+
+// const swiper2 = new Swiper('.gallery-slider.swiper', {
+//   loop: true,
+//   autoplay: {
+//     delay: 1000,
+//   },
+//   speed: 3000,
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+// });
 
 // ==============================
 // ハンバーガーメニュー開閉
