@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>さわやか歯科クリニック</title>
+    <title>さわやか歯科クリニックの治療方針</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
+<!-- 中ページのdiscriputionを追記する　yoast seo プラグイン -->
 
 <body>
     <header>
@@ -61,32 +63,56 @@
     </header>
 
     <div class="firstview">
-        <img src="images/fv/slide1.png" alt="さわやか歯科クリニックのスタッフとお客様">
+        <img src="images/fv/vision-slide.png" alt="さわやか歯科クリニックのスタッフとお客様">
+        <!-- 画像サイズを1200*400に変更 -->
         <div class="firstview__content">
             <p>治療方針</p>
             <p>必要な治療を、必要な分だけ</p>
         </div>
     </div>
 
-    <section class="section vision">
+    <section class="section vision-first">
 
-        <div class="wrapper vision-body">
+        <div class="wrapper vision-first-body">
             <div class="section-header">
                 <h2 class="section-title">治療を始める前に、必ずお話します</h2>
                 <p class="section-title-english">vision concept</p>
             </div>
 
-            <div class="vision-container">
-                <img src="images/gallery/vision_staff.png" alt="さわやか歯科クリニックスタッフ一同" class="vision-container-img">
-                <p class="vision-container-text">
+            <div class="vision-first-container">
+                <img src="images/gallery/vision_staff.png" alt="さわやか歯科クリニックスタッフ一同" class="vision-first-container-img">
+                <p class="vision-first-container-text">
                     当院では、すぐに治療を始めるのではなく、まずはしっかりとお話をする時間を大切にしています。患者さまのお悩みや不安に寄り添い、一緒に最適な治療を考えていきます。<br>
                     すぐに歯を削らない、無理に進めない、選択肢をきちんと伝える。患者さまとの対話を通じ、信頼関係を築くことを第一に考えています。
                 </p>
             </div>
-            <div class="vision-cards">
-                <div class="vision-card"></div>
-                <div class="vision-card"></div>
-                <div class="vision-card"></div>
+            <div class="vision-first-cards">
+                <div class="vision-first-card">
+                    <div class="vision-first-card__head">
+                        <span class="vision-first-card__number">方針その1</span>
+                        <h3>説明を重視</h3>
+                    </div>
+                    <p class="vision-first-card__text">
+                        検査結果や治療の必要性について、わかりやすく丁寧にご説明します。<br>なるべく専門用語は使わず、ご理解いただけるまでお話しします。</p>
+                </div>
+
+                <div class="vision-first-card">
+                    <div class="vision-first-card__head">
+                        <span class="vision-first-card__number">方針その2</span>
+                        <h3>選択は患者さんと一緒に</h3>
+                    </div>
+                    <p class="vision-first-card__text">複数の治療方法がある場合、それぞれのメリット・デメリットをお伝えします。<br>患者さまご自身で納得して選んでいただきます。
+                    </p>
+                </div>
+
+                <div class="vision-first-card">
+                    <div class="vision-first-card__head">
+                        <span class="vision-first-card__number">方針その3</span>
+                        <h3>経過観察も治療の一つ</h3>
+                    </div>
+                    <p class="vision-first-card__text">すぐに治療が必要ない場合、経過を見守ることも大切な選択肢です。<br>定期的に確認しながら、適切なタイミングを一緒に考えます。
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -100,18 +126,34 @@
                 <p class="section-title-english">vision concept</p>
             </div>
 
-            <p class="vision-second-text">
+            <p class="vision-sub-text">
                 当院では、患者さまにとって本当に必要な治療だけをご提案するため、以下の取り組みを行っています。
             </p>
 
             <div class="vision-second-container">
                 <div class="vision-second-cards">
-                    <div class="vision-second-card"></div>
-                    <div class="vision-second-card"></div>
-                    <div class="vision-second-card"></div>
-                    <div class="vision-second-card"></div>
-                    <div class="vision-second-card"></div>
+                    <dl class="vision-second-card">
+                        <dt class="vision-second-card__head">初診時の丁寧なカウンセリング</dt>
+                        <dd class="vision-second-card__text">お悩みや不安、治療への希望をじっくりお聞きします。</dd>
+                    </dl>
+                    <dl class="vision-second-card">
+                        <dt class="vision-second-card__head">治療計画の事前説明</dt>
+                        <dd class="vision-second-card__text">何をするのか、なぜ必要なのかを明確にお伝えします。</dd>
+                    </dl>
+                    <dl class="vision-second-card">
+                        <dt class="vision-second-card__head">検査結果の共有</dt>
+                        <dd class="vision-second-card__text">レントゲンや口腔内写真を一緒に見ながら、現状をご説明します。</dd>
+                    </dl>
+                    <dl class="vision-second-card">
+                        <dt class="vision-second-card__head">「今すぐ治療しない」選択肢の提示</dt>
+                        <dd class="vision-second-card__text">急を要さない場合、経過観察という選択もご提案します。</dd>
+                    </dl>
+                    <dl class="vision-second-card">
+                        <dt class="vision-second-card__head">費用・期間の事前相談</dt>
+                        <dd class="vision-second-card__text">治療にかかる費用や通院回数の目安を、事前にお伝えします。</dd>
+                    </dl>
                 </div>
+                <!-- 画面左の説明量に対して、画面右の写真の枚数が1枚だとバランス悪い -->
                 <img src="images/gallery/vision_staff.png" alt="さわやか歯科クリニックスタッフ一同" class="vision-second-container-img">
             </div>
 
@@ -126,21 +168,31 @@
                 <p class="section-title-english">vision concept</p>
             </div>
 
-            <p class="vision-third-text">
+            <p class="vision-sub-text">
                 分からないまま進まない。納得してから次へ進む。そのための流れをご説明します。
             </p>
 
-            <div class="vision-third-container">
-                <div class="vision-third-cards">
-                    <div class="vision-third-card"></div>
-                    <div class="vision-third-card"></div>
-                    <div class="vision-third-card"></div>
-                    <div class="vision-third-card"></div>
-                </div>
-            </div>
+            <ol class="vision-third-cards">
+                <li class="box-raduis vision-third-card">
+                    <h3 class="vision-third-card__head">相談・ヒアリング</h3>
+                    <p class="vision-third-card__text">まずは、お悩みや気になることをお聞かせください。どんな小さなことでも構いません。</p>
+                </li>
+                <li class="box-raduis vision-third-card">
+                    <h3 class="vision-third-card__head">検査・説明</h3>
+                    <p class="vision-third-card__text">必要な検査を行い、お口の中の状態を詳しくご説明します。画像を見ながら分かりやすくお伝えします。</p>
+                </li>
+                <li class="box-raduis vision-third-card">
+                    <h3 class="vision-third-card__head">治療方針の共有</h3>
+                    <p class="vision-third-card__text">考えられる治療方法をいくつかご提案し、それぞれのメリット・デメリット、費用や期間をお伝えします。</p>
+                </li>
+                <li class="box-raduis vision-third-card">
+                    <h3 class="vision-third-card__head">納得後に治療開始</h3>
+                    <p class="vision-third-card__text">患者さまがご納得され、ご了承いただいてから治療を始めます。急いで決める必要はありません。</p>
+                </li>
+            </ol>
 
-            <p class="vision-third-note">
-                治療の途中でも、疑問や不安があればいつでもお伝えください。分からないまま進めることはありません。
+            <p class="vision-note">
+                治療の途中でも、疑問や不安があればいつでもお伝えください。<br>分からないまま進めることはありません。
             </p>
 
         </div>
@@ -154,21 +206,37 @@
                 <p class="section-title-english">vision concept</p>
             </div>
 
-            <p class="vision-question-text">
+            <p class="vision-sub-text">
                 遠慮なく、何でもお聞きください。患者さまの不安や疑問にしっかりとお答えします。
             </p>
 
             <div class="vision-question-container">
                 <div class="vision-question-cards">
-                    <div class="vision-question-card"></div>
-                    <div class="vision-question-card"></div>
-                    <div class="vision-question-card"></div>
+                    <dl class="vision-question-card">
+                        <dt class="vision-question-card__head">本当にこの治療は必要なのでしょうか？</dt>
+                        <dd class="vision-question-card__text">
+                            なぜその治療が必要なのか、放置するとどうなるのか、今すぐ必要なのかなど、丁寧にご説明します。<br>セカンドオピニオンを希望される場合もご遠慮なくお申し出ください。</dd>
+                    </dl>
+                    <dl class="vision-question-card">
+                        <dt class="vision-question-card__head">治療期間はどれくらいかかりますか？</dt>
+                        <dd class="vision-question-card__text">
+                            治療内容や範囲によって異なりますが、事前にしっかりとご説明します。<br>通院回数の目安などもお伝えしますので、ご安心ください。</dd>
+                    </dl>
+                    <dl class="vision-question-card">
+                        <dt class="vision-question-card__head">痛みはありますか？</dt>
+                        <dd class="vision-question-card__text">
+                            治療内容や範囲によって異なりますが、事前にしっかりとご説明します。<br>通院回数の目安などもお伝えしますので、ご安心ください。</dd>
+                    </dl>
                 </div>
+
+                <p class="vision-note">
+                    その他にも、どんなことでもお気軽にご相談ください。<br>「こんなこと聞いてもいいのかな」と思うことこそ、お話しください。
+                </p>
             </div>
 
-            <p class="vision-question-note">
-                その他にも、どんなことでもお気軽にご相談ください。<br>「こんなこと聞いてもいいのかな」と思うことこそ、お話しください。
-            </p>
+
+
+            <!-- 2つまとめたものに⇒widt70% margin:0 auto vision-question-cardにwidth100%-->
 
         </div>
     </section>
