@@ -115,11 +115,11 @@
   color: var(--color-text-primary);
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .firstview-parent__calendar {
     right: calc(50% - 592px);
   }
-}
+} */
 
 @media screen and (max-width: 834px) {
   .firstview-parent__calendar {
@@ -168,35 +168,44 @@
   position: absolute;
   top: 50%;
   left: 4.5%;
-  transform: translateY(-50%);
-  width: 100%;
-  max-width: 90%;
+  width: 95%;
   color: var(--color-bg-primary);
   /* または #ffffff */
   font-weight: var(--font-weight-bold);
   z-index: 2;
   /* Vegasの背景画像（z-index: 0や-1）の上に表示 */
+  /* overflow-x: hidden; */
+  /* 横スクロールバーを消去 */
+}
+
+@media screen and (max-width: 834px) {
+  .firstview-parent__content {
+    position: absolute;
+    top: 40%;
+    left: 4.5%;
+  }
 }
 
 .firstview-child__content {
   position: absolute;
   top: 50%;
   left: 4.5%;
-  transform: translateY(-50%);
-  width: 100%;
-  max-width: 90%;
+  width: 95%;
   color: var(--color-bg-primary);
   /* または #ffffff */
   font-weight: var(--font-weight-bold);
   z-index: 2;
   /* Vegasの背景画像（z-index: 0や-1）の上に表示 */
+  /* overflow-x: hidden; */
+  /* 横スクロールバーを消去 */
 }
 
-@media (min-width: 1440px) {
+
+/* @media (min-width: 1440px) {
   .firstview-parent__content {
     left: calc(50% - 592px);
   }
-}
+} */
 
 .hero__text {
   opacity: 0;
