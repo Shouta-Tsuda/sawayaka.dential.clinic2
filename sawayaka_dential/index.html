@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>さわやか歯科クリニック</title>
     <link rel="stylesheet" href="reset.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vegas/dist/vegas.min.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
+    <script src="https://unpkg.com/vegas/dist/vegas.iife.min.js"></script>
 </head>
 
 <body>
@@ -129,61 +130,71 @@
     </div> -->
 
     <!-- ヒーローイメージ用コード -->
-    <div class="firstview" id="hero-vegas">
-        <div class="firstview__content" id="hero-text">
-            <p>地下鉄南北線ひかりが丘駅から徒歩5分</p>
-            <p>外から雰囲気がわかる、通いやすい歯医者です</p>
-        </div>
-
-        <div class="calendar-container firstview__calendar">
-            <div class="calendar-title-flex">
-                <p class="calendar-container__title">受付時間</p>
-                <span class="calendar-container__note">日祝は休診です</span>
+    <div class="hero__text__box">
+        <div class="firstview-parent__content" id="hero-text">
+            <div class="hero__text hero__text1">
+                <p>地下鉄南北線ひかりが丘駅から徒歩5分</p>
+                <p>外から雰囲気がわかる、通いやすい歯医者です</p>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>月</th>
-                        <th>火</th>
-                        <th>水</th>
-                        <th>木</th>
-                        <th>金</th>
-                        <th>土</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>8:45〜13:15</th>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                    </tr>
-                    <tr>
-                        <th>14:15〜18:30</th>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>×</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="hero__text hero__text2">
+                <p>光が差し込む開放的な待合スペース</p>
+                <p>お子さま連れでも安心して通院できます</p>
+            </div>
+            <div class="hero__text hero__text3">
+                <p>必要以上の治療はしない</p>
+                <p>今の状態と選択肢を丁寧にお伝えします</p>
+            </div>
+        </div>
+        <div class="firstview-parent" id="hero-vegas">
+            <div class="calendar-container firstview-parent__calendar">
+                <div class="calendar-title-flex">
+                    <p class="calendar-container__title">受付時間</p>
+                    <span class="calendar-container__note">日祝は休診です</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>8:45〜13:15</th>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                        </tr>
+                        <tr>
+                            <th>14:15〜18:30</th>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>●</td>
+                            <td>×</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="firstview-parent-bottom">
+                <p class="firstview-parent-bottom_text">
+                    当日のお電話予約も受付中！急な痛みもご相談ください<br>
+                    受付時間：平日 8:45〜13:15 / 14:15〜18:30 ・ 土曜 8:45〜13:15
+                </p>
+                <a href="#" class="button-reservation">今すぐ電話</a>
+                <a href="#" class="button-reservation button-web-mobile">かんたんWEB予約</a>
+            </div>
         </div>
     </div>
-
-    <section class="firstview-bottom">
-        <p class="firstview-bottom_text">
-            当日のお電話予約も受付中！急な痛みもご相談ください<br>
-            受付時間：平日 8:45〜13:15 / 14:15〜18:30 ・ 土曜 8:45〜13:15
-        </p>
-        <a href="#" class="button-reservation">今すぐ電話</a>
-        <a href="#" class="button-reservation button-web-mobile">かんたんWEB予約</a>
-    </section>
 
     <section class="reason section">
         <div class="wrapper">
@@ -582,12 +593,12 @@
                 </a>
             </h1>
 
-            <div class="footer-content">
+            <address class="footer-content">
                 <p>〒003-0236 札幌市厚別区厚別中央2条1丁目4-18 第29森川ビル1F</p>
                 <p>TEL 011-123-456</p>
                 <p>受付時間:平日 8:45〜13:15 / 14:15〜18:30 ・ 土曜 8:45〜13:15</p>
                 <p>休診日:日曜、祝日</p>
-            </div>
+            </address>
 
             <div class="icon">
                 <ul class="icon-list">
@@ -614,11 +625,9 @@
             <small>&copy;Copyright 2026 さわやか歯科クリニック All rights reserved.</small>
         </p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
 
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
