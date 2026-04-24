@@ -88,14 +88,27 @@ vegas('#hero-vegas', {
 //   speed: 1500,
 // });
 
-const swiper2 = new Swiper('.gallery-slider.swiper', {
+const swiper = new Swiper('.gallery-slider.swiper', {
   loop: true,
   autoplay: {
     delay: 1000,
   },
   speed: 3000,
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 0,
+
+  breakpoints: {
+    // when window width is >= 640,1024px(ここのブレイクポイントをタブレット・スマホで設定)
+    639: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+
+  }
 });
 
 // ==============================
